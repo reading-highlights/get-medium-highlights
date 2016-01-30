@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "asdf"
+    "url": "git@github.com:reading-highlights/get-medium-highlights.git"
   },
   "keywords": [
     "medium",
@@ -23,5 +23,8 @@
   "dependencies": {
     "bluebird": "^3.1.1",
     "restler": "^3.4.0"
+  },
+  "devDependencies": {
+    "aws-sdk": "^2.2.33"
   }
 }
