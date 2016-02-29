@@ -47,7 +47,6 @@ exports.handler = function(event, context) {
 
     }).then(function() {
       console.log('' + quoteCount + ' quote(s) published to SNS');
-      process.exit();
       context.succeed();
     }).catch(function(error) {
       console.log(error);
@@ -73,6 +72,8 @@ var mediumJSONParser = function(data, callback) {
   }
 };
 
+// FOR LOCAL TESTING
+//
 // var context = {
 //   fail: function(msg) {
 //     console.log('Error:');
